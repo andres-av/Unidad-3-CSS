@@ -1,0 +1,357 @@
+/* Color Palette
+
+Tomato (decorative) 
+rgb(240, 101, 67)
+
+Alabaster (backgrounds) 
+rgb(241, 238, 228)
+
+Seasalt ("white text") 
+rgb(251, 250, 248)
+
+Lapis Lazulli (decorative and titles) 
+rgb(74, 103, 150)
+
+Oxford Blue (dark text) 
+rgb(10, 18, 42) 
+
+End of Color Palette */
+
+/* General Styles */
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* End of General Styles */
+
+/* Desktop styling */
+/* Hero Section*/
+.hero {
+    position: relative;
+    height: 100vh; 
+    background-image: url('assets/hero-section.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center left;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 2em;
+    color: rgb(251, 250, 248);
+    text-align: left;
+    margin-left: 2em;
+}
+
+.hero-content h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 5.5rem;
+    margin-bottom: 0;
+}
+
+.hero-content h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0;
+}
+.frontEnd{
+    color: rgb(74, 103, 150);
+    font-weight: bolder;
+}
+/* End of Hero Section*/
+
+/* Aside Styles */
+.links {
+    background-color: rgba(240, 101, 67, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 10px;
+    padding: 1em;
+    position: fixed;
+    top: 6rem;
+    left: 90vw;
+    z-index: 4;
+    max-width: 80px;
+    width: 5vw;
+    height: 16vw;
+    display: flex;
+    flex: 1;
+}
+
+.ulLinks{
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex;
+    flex: 999;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-brands, .fa-solid {
+    color: rgb(241, 238, 228);
+    font-size: 2.2rem;
+    padding: 0.5rem;
+}
+
+.fa-brands:hover, .fa-solid:hover {
+    color: rgb(74, 103, 150);
+    font-size: 2.5rem;
+    padding: 0.3rem;
+    transition: 0.3s;
+}
+/*End of Aside Styles */
+
+/* About Me Section Styles*/
+.body {
+    padding: 2em;
+    background-color: rgb(241, 238, 228);
+}
+main {
+    flex: 3;
+    margin-right: 2em;
+}
+.aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.aboutMeHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 55% 45% 51% 49% / 72% 69% 31% 28% ;
+    background-position: top left;
+    width: 20vw;
+    height: 15vw;
+}
+.aboutMeTitle {
+    color: rgb(251, 250, 248);
+    font-size: 2vw;
+    margin: 0;
+}
+.aboutMeBlops{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    color: rgb(251, 250, 248);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+}
+.blop1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 80% 20% 70% 30% / 37% 46% 54% 63%;
+    background-position: left;
+    width: 20vw;
+    height: 15vw;
+}
+.blop2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 54% 46% 17% 83% / 62% 64% 36% 38%;
+    background-position: right;
+    width: 35vw;
+    height: 25vw;
+}
+.blop3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 30% 70% 70% 30% / 68% 71% 29% 32%;
+    background-position: top;
+    width: 25vw;
+    height: 15vw;
+}
+.blop4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 21% 79% 43% 57% / 22% 46% 54% 78%;
+    background-position: bottom;
+    width: 20vw;
+    height: 10vw;
+}
+.aboutMeText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.aboutMeTextStyling{
+    font-size: 2rem;
+    color: rgb(10, 18, 42);
+    margin-right: 10vw;
+}
+.textHighlights{
+    color: rgb(240, 101, 67);
+}
+.svgContainer{
+    position: relative;
+}
+.svgBackground{
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 70% 30% 32% 68% / 28% 68% 32% 72%;
+    background-position: bottom right;
+    width: 22vw;
+    height: 12vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* z-index: -1; */
+}
+.svgElement{
+    position: relative;
+    width: 20vw;
+    height: 10vw;
+    margin-left: 2vw;
+}
+.listAndTable{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+.interests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 49% 51% 22% 78% / 52% 68% 32% 48% ;
+    background-position: top left;
+    width: 20vw;
+    height: 10vw;
+    color: rgb(251, 250, 248);
+    font-size: 1vw;
+}
+.intList{
+    list-style-type: none;
+}
+.studies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/blop-bg1.jpg');
+    border-radius: 14% 86% 79% 21% / 83% 44% 56% 17%;
+    background-position: top right;
+    width: 30vw;
+    height: 15vw;
+    color: rgb(251, 250, 248);
+    font-size: 1vw;
+}
+td {
+    padding-left: 1rem;
+}
+/* End of About Me Section Styles*/
+
+
+/* Footer Styles*/
+.footer {
+    background-color: rgb(74, 103, 150);
+    color: rgb(251, 250, 248);
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+}
+/* End of Footer Styles*/
+/* End of Desktop styling */
+
+/* Lower VW styling */
+@media (max-width: 1000px) {
+    .links {
+        padding: 1em;
+        top: 20%;
+        left: 75%;
+        width: 10%;
+        height: 15%;
+    }
+    .fa-brands, .fa-solid {
+        font-size: 5vw;
+        padding: 0.5rem;
+    }
+    .aboutMeHeader {
+        width: 40vw;
+        height: 30vw;
+    }
+    .aboutMeTitle {
+        font-size: 4vw;
+    }
+    .aboutMeBlops{
+        flex-direction: column;
+        font-size: 4vw;
+        font-weight: bolder;
+        font-family: 'Nunito', sans-serif;
+    }
+    .blop1{
+        width: 40vw;
+        height: 30vw;
+    }
+    .blop2{
+        width: 70vw;
+        height: 50vw;
+    }
+    .blop3{
+        width: 50vw;
+        height: 30vw;
+    }
+    .blop4{
+        width: 40vw;
+        height: 30vw;
+    }
+    .aboutMeText{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .aboutMeTextStyling{
+        font-size: 4vw;
+        margin-right: 0;
+    }
+    .svgBackground{
+        width: 44vw;
+        height: 24vw;
+    }
+    .svgElement{
+        width: 40vw;
+        height: 20vw;
+    }
+    .listAndTable{
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .interests{
+        width: 60vw;
+        height: 30vw;
+        font-size: 2.5vw;
+    }
+    .studies{
+        width: 80vw;
+        height: 60vw;
+        font-size: 2.5vw;
+    }
+    td {
+        padding-left: 0.5rem;
+    }
+    .footer {
+        padding: 0;
+        font-size: 2vw;
+    }
+}
+/* End of Lower VW styling */
