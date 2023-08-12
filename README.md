@@ -2,6 +2,11 @@
 
 Este README proporciona una visión general de la página web personal creada como parte del ejercicio de la Unidad Didáctica 3. La página web ha sido diseñada con HTML y CSS, siguiendo las directrices del enunciado proporcionado.
 
+## Cómo Ejecutar
+La página está disponible a través de GitHub Pages en el siguiente enlace: 
+
+https://andres-av.github.io/Unidad-3-CSS/
+
 ## Descripción
 
 La página web es un currículum personal en línea, diseñado para destacar las habilidades y experiencias de Andres Abarca, un aspirante a Front End Developer con experiencia en diseño gráfico y desarrollo Full-Stack. El diseño y los estilos se han implementado con cuidado para lograr una presentación atractiva y una experiencia de usuario agradable.
